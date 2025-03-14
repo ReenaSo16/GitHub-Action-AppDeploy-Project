@@ -1,2 +1,3 @@
-Flask
+
+echo "flask" > requirements.txt
 pytest
