@@ -16,7 +16,7 @@ jobs:
       run: ls -l
 
     - name: Build The Docker Image
-      run: docker build . --file Dockerfile --tag workflow-test:$(date +%s)
+      run: docker build -t workflow-test:$(date +%s) -f app/Dockerfile app/
 
   build-and-test:
     runs-on: ubuntu-latest
